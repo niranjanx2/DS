@@ -7,7 +7,7 @@ for(let i=0; i<randomArr.length; i++){
             min = j;
         }
     }
-    [randomArr[i],randomArr[min]] = [randomArr[min],randomArr[i]]
+    if(i !== min) [randomArr[i],randomArr[min]] = [randomArr[min],randomArr[i]]
 }
 
 console.log(randomArr)
